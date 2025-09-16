@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cafe24 Widget</title>
+    <script type="module" crossorigin>(function(){const r=document.createElement("link").relList;if(r&&r.supports&&r.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))i(e);new MutationObserver(e=>{for(const o of e)if(o.type==="childList")for(const n of o.addedNodes)n.tagName==="LINK"&&n.rel==="modulepreload"&&i(n)}).observe(document,{childList:!0,subtree:!0});function s(e){const o={};return e.integrity&&(o.integrity=e.integrity),e.referrerPolicy&&(o.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?o.credentials="include":e.crossOrigin==="anonymous"?o.credentials="omit":o.credentials="same-origin",o}function i(e){if(e.ep)return;e.ep=!0;const o=s(e);fetch(e.href,o)}})();(function(){console.log("[cafe24-widget] script loaded");const t=document.getElementById("cafe24-widget-root");if(!t)return;const r=/product\/detail/.test(location.pathname),s=/product\/list|category/.test(location.pathname);if(!(r||s||location.host.includes("localhost")))return;t.textContent="Widget loaded",t.style.position="fixed",t.style.right="16px",t.style.bottom="80px",t.style.padding="6px 10px",t.style.background="rgba(17,17,17,0.6)",t.style.color="#fff",t.style.borderRadius="6px",t.style.fontSize="12px",t.style.zIndex="99998";const e=document.createElement("div");e.textContent="🚀 Fast Shipping Available",e.style.position="fixed",e.style.right="16px",e.style.bottom="16px",e.style.padding="10px 14px",e.style.background="#111",e.style.color="#fff",e.style.borderRadius="8px",e.style.fontSize="14px",e.style.zIndex="99999",t.appendChild(e)})();</script>
+  </head>
+  <body>
+    <div id="cafe24-widget-root"></div>
+  </body>
+</html>
